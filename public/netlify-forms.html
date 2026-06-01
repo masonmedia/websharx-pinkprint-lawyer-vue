@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- Netlify form detection for the SPA/SSR contact form -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="inquiry-type">
+        <option value="general">General Inquiry</option>
+        <option value="collaboration">Collaboration &amp; Partnership</option>
+        <option value="speaking">Speaking Engagement</option>
+        <option value="media">Media &amp; Press</option>
+      </select>
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>
