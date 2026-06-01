@@ -262,6 +262,7 @@ h1, h2, h3, h4, h5, h6, blockquote { font-family: 'Playfair Display', serif; }
 .hero {
   position: relative; min-height: 92vh; display: flex;
   align-items: center; overflow: hidden; padding: 96px 0;
+  background-color: var(--plum);
 }
 .hero-bg {
   position: absolute; inset: 0;
