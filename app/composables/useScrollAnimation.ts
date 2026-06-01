@@ -11,7 +11,11 @@ export function useScrollAnimation(heroSelector: string) {
 
     const hero = document.querySelector(heroSelector)
     if (hero) {
-      const heroTargets = hero.querySelectorAll(':scope > .container > .row > [class*="col"]')
+      const textCol = hero.querySelector(':scope > .container > .row > [class*="col"]:first-child')
+      const imgCol  = hero.querySelector(':scope > .container > .row > [class*="col"]:last-child')
+      const heroTargets: Element[] = []
+      if (textCol) heroTargets.push(...Array.from(textCol.children))
+      if (imgCol)  heroTargets.push(imgCol)
       heroTargets.forEach((el, i) => {
         el.classList.add('fade-up')
         ;(el as HTMLElement).style.setProperty('--stagger', String(i))

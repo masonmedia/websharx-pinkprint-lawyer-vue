@@ -3,7 +3,10 @@ const HOME_PAGE_ID = 87
 
 function parseJsonField<T>(value: string | T, fallback: T): T {
   if (typeof value !== 'string') return value ?? fallback
-  try { return JSON.parse(value) as T } catch { return fallback }
+  try { return JSON.parse(value) as T } catch {
+    // WordPress sometimes stores string values with doubled quotes (""text""); repair and retry
+    try { return JSON.parse(value.replace(/""/g, '"')) as T } catch { return fallback }
+  }
 }
 
 export function useHomePage() {
