@@ -415,10 +415,10 @@ async function handleContactSubmit(e: Event) {
             <img src="/assets/logos/1_Primary/The Pinkprint Lawyer_Primary.png" alt="The Pinkprint Lawyer" height="42" />
             <p class="text-muted-pp mt-3 mb-3 footer-tagline">Your roadmap through law school<br />and into the profession.</p>
             <div class="d-flex gap-2">
-              <a href="#" aria-label="Instagram" class="bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-instagram"></i></a>
-              <a href="#" aria-label="LinkedIn"  class="bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="TikTok"    class="bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-tiktok"></i></a>
-              <a href="#" aria-label="YouTube"   class="bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-youtube"></i></a>
+              <a href="#" aria-label="Instagram" class="ppl-social bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"  class="ppl-social bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-linkedin"></i></a>
+              <a href="#" aria-label="TikTok"    class="ppl-social bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-tiktok"></i></a>
+              <a href="#" aria-label="YouTube"   class="ppl-social bg-blush rounded-3 d-flex align-items-center justify-content-center text-plum text-decoration-none icon-36"><i class="bi bi-youtube"></i></a>
             </div>
           </div>
           <div class="col-6 col-lg-2">
